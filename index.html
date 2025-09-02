@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kilani Vijaya Sai Varshitha – Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <!-- External JS -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- ================= Header / Navbar ================= -->
+  <header>
+    <nav class="nav">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true"></div>
+        <span>Kilani <span style="color:var(--brand2)">Vijaya Sai Varshitha</span></span>
+      </div>
+      <div class="controls">
+        <button class="toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <button class="burger" id="burgerBtn" aria-expanded="false" aria-controls="navMenu">☰</button>
+      </div>
+      <div class="nav-links" id="navMenu">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#certs">Certifications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= Hero ================= -->
+  <section id="hero" class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="badge">Aspiring Software Engineer | Cloud & Full Stack Dev</div>
+        <h1>Hi, I'm <span style="background:linear-gradient(90deg,var(--brand1),var(--brand2)); -webkit-background-clip:text; background-clip:text; color:transparent">Kilani Vijaya Sai Varshitha</span></h1>
+        <div class="tag" id="typing">Python | SQL | Verilog Developer</div>
+        <p class="intro">Based in Gajuwaka, passionate about building impactful projects in cloud computing and engineering.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+          <a class="btn" href="#about">About Me</a>
+        </div>
+        <div class="hero-badges">
+          <span class="badge">Open to Opportunities</span>
+          <span class="badge">Currently Located in Gajuwaka, Visakhapatnam</span>
+        </div>
+      </div>
+      <div style="display:grid; place-items:center">
+        <div class="pfp" aria-label="Profile photo">
+          <img src="Varshitha.jpg" alt="Kilani Vijaya Sai Varshitha" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <!-- ================= About ================= -->
+    <section id="about" class="card">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-sub">B.Tech – Engineering @ Vignan's Institute of Engineering for Women | CGPA 8.23</p>
+      <p>
+        I am an enthusiastic engineer skilled in <strong>Python</strong>, <strong>SQL</strong>, and <strong>Verilog</strong>. I enjoy working on projects involving cloud computing and software development, including my ongoing Air Quality Indicator and EE projects.
+      </p>
+      <div class="actions">
+        <a class="btn" href="mailto:varshithakilani2306@gmail.com">Hire Me</a>
+        <a class="btn primary" href="#" download>Download Resume</a>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- ================= Skills ================= -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-sub">Technical skills that I bring to the table.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Core Skills</h3>
+          <div class="skill"><span>Python</span><span>85%</span></div>
+          <div class="bar"><span data-width="85"></span></div>
+          <div class="skill"><span>SQL</span><span>75%</span></div>
+          <div class="bar"><span data-width="75"></span></div>
+          <div class="skill"><span>Verilog</span><span>70%</span></div>
+          <div class="bar"><span data-width="70"></span></div>
+        </div>
+        <div class="card">
+          <h3>Web & Tools</h3>
+          <div class="skill"><span>HTML</span><span>80%</span></div>
+          <div class="bar"><span data-width="80"></span></div>
+          <div class="skill"><span>CSS</span><span>75%</span></div>
+          <div class="bar"><span data-width="75"></span></div>
+          <div class="skill"><span>JavaScript</span><span>65%</span></div>
+          <div class="bar"><span data-width="65"></span></div>
+          <div class="skill"><span>Flask</span><span>70%</span></div>
+          <div class="bar"><span data-width="70"></span></div>
+        </div>
+        <div class="card">
+          <h3>Other Skills</h3>
+          <div class="skill"><span>Cloud Basics</span><span>65%</span></div>
+          <div class="bar"><span data-width="65"></span></div>
+          <div class="skill"><span>DevOps Concepts</span><span>60%</span></div>
+          <div class="bar"><span data-width="60"></span></div>
+          <div class="skill"><span>Cybersecurity</span><span>55%</span></div>
+          <div class="bar"><span data-width="55"></span></div>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- ================= Projects ================= -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Highlighted projects showcasing my skills and problem-solving capabilities.</p>
+      <div class="grid cols-3">
+        <article class="card project-card">
+          <div class="project-img">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.BggSBmzSr2lWjKvNvsloNQHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Air Quality Indicator project" class="project-thumb"/>
+          </div>
+          <h3>Air Quality Indicator</h3>
+          <p>
+            Developed a system to monitor air pollution levels in real-time, providing valuable insights for environmental awareness.
+          </p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/varshithakilani2306/Air-Quality-Indicator.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="btn primary" href="https://github.com/varshithakilani2306/Air-Quality-Indicator.git" target="_blank">Live Demo</a>
+          </div>
+        </article>
+        <article class="card project-card">
+          <div class="project-img">
+            <img src="https://images.interestingengineering.com/img/iea/ypwqln5Q6N/ieengineer26.jpg" alt="Electrical Engineering project" class="project-thumb"/>
+          </div>
+          <h3>Electrical Engineering Project</h3>
+          <p>
+            Designed and implemented electronic systems to solve specific engineering problems using Verilog and Python.
+          </p>
+          <div class="actions">
+            <a class="btn" href="https://github.com/varshithakilani2306/Electrical-Engineering-Project.git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="btn primary" href="https://github.com/varshithakilani2306/Electrical-Engineering-Project.git" target="_blank">Project Report</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- ================= Experience ================= -->
+    <section id="experience" class="card">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="t-item card" style="background:transparent">
+          <h3>Internship / Freelance (Placeholder)</h3>
+          <div class="muted">Details forthcoming</div>
+          <ul>
+            <li>Undertaking projects in cloud computing and development.</li>
+            <li>Expanding skills with hands-on applications.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- ================= Education ================= -->
+ <section id="education" class="card">
+  <h2 class="section-title">Education</h2>
+  <div class="roadmap">
+    <div class="roadmap-item">
+      <div class="edu-content">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.Mz6LDPfBXQbw0F0-h5c52wHaCd?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Vignan's Institute of Engineering for Women" class="edu-img" />
+        <div>
+          <h3>Vignan's Institute of Engineering for Women, Visakhapatnam</h3>
+          <p>B.Tech – Current<br>CGPA: 8.23</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <div class="edu-content">
+        <img src="https://www.facultyplus.com/wp-content/uploads/2022/07/logo-building-photos.jpg" alt="Alwardas Polytechnic, Gopalapatnam" class="edu-img" />
+        <div>
+          <h3>Alwardas Polytechnic, Gopalapatnam</h3>
+          <p>Diploma<br>Marks: 9.23</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <div class="edu-content">
+        <img src="https://play-lh.googleusercontent.com/uIQwRdd0q_NEImEZQqmTM4nyHM-J5cfn4CWq1B1cj3L58B7-MIfMXAJkpcXhYzNilg" alt="Sri Saraswati Vidya Vihar, Gajuwaka" class="edu-img" />
+        <div>
+          <h3>Sri Saraswati Vidya Vihar, Gajuwaka</h3>
+          <p>Class 10<br>Percentage: 100</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="divider"></div>
+    <!-- ================= Certifications ================= -->
+    <section id="certs">
+      <h2 class="section-title">Certifications</h2>
+      <div class="grid cols-3">
+        <div class="card cert-card">
+          <img src="https://th.bing.com/th/id/OIP.wR769NrZSAWuE7lVMsUcKAHaHj?w=144&h=180&c=7&r=0&o=7&dpr=1.7&pid=1.7&rm=3" class="cert-thumb" alt="HP Life AI for Beginners" />
+          <div>
+            <h3>HP Life</h3>
+            <p>AI for Beginners</p>
+            <a class="btn primary" href="https://drive.google.com/file/d/1Sp3QThUDmvrgqirnvEFrEPHprOBjhcYJ/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View Certification</a>
+          </div>
+        </div>
+        <div class="card cert-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.5OAXyrmD2fFhQ28kIb41QgHaDw?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="cert-thumb" alt="Infosys Python Programming" />
+          <div>
+            <h3>Infosys</h3>
+            <p>Programming Fundamentals using Python</p>
+            <a class="btn primary" href="https://drive.google.com/file/d/18aYQGlDCHBA96XgRsl_ae2ziDWTngK8J/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View Certification</a>
+          </div>
+        </div>
+        <div class="card cert-card">
+          <img src="https://tse4.mm.bing.net/th/id/OIP.txgTbVO9wLHuCfBZy0jd3wHaGR?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="cert-thumb" alt="Forage Cybersecurity Analyst" />
+          <div>
+            <h3>Forage</h3>
+            <p>Cyber Security Analyst</p>
+            <a class="btn primary" href="https://drive.google.com/file/d/1pPiVWmGxh83B4q2RA9sVKLaPPbTs8Dqp/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View Certification</a>
+          </div>
+        </div>
+        <div class="card cert-card">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.tVHImC715kuoK3qLMsUOfAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="cert-thumb" alt="Udemy Course HTML Python Flask" />
+          <div>
+            <h3>Udemy</h3>
+            <p>HTML, Python, Flask Framework</p>
+            <a class="btn primary" href="https://drive.google.com/file/d/13_epfNOvDc-CkqX4PW2uzJRIyacOrGhf/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View Certification</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- ================= Achievements ================= -->
+    <section id="achievements" class="card">
+      <h2 class="section-title">Achievements</h2>
+      <ul>
+        <li>Completed Deloitte Australia Data Analytics Job Simulation (Forage).</li>
+      </ul>
+    </section>
+    <div class="divider"></div>
+    <!-- ================= Blog ================= -->
+    <section id="blog">
+      <h2 class="section-title">Blog & Articles</h2>
+      <p class="section-sub">Long-form notes and writeups — linked externally.</p>
+      <div class="grid cols-3">
+        <article class="card">
+          <h3>Coming Soon</h3>
+          <p class="muted">Stay tuned for blog updates.</p>
+          <div class="actions"><a class="btn primary" href="#" target="_blank">Read</a></div>
+        </article>
+        <article class="card">
+          <h3>Coming Soon</h3>
+          <p class="muted">Stay tuned for blog updates.</p>
+          <div class="actions"><a class="btn primary" href="#" target="_blank">Read</a></div>
+        </article>
+        <article class="card">
+          <h3>Coming Soon</h3>
+          <p class="muted">Stay tuned for blog updates.</p>
+          <div class="actions"><a class="btn primary" href="#" target="_blank">Read</a></div>
+        </article>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- ================= Testimonials (Slider) ================= -->
+    <section id="testimonials" class="card">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="slider" aria-live="polite">
+        <div class="slides" id="slides">
+          <div class="slide">
+            <p>Kilani learns incredibly fast and delivers clean, maintainable code. A joy to mentor.</p>
+            <p class="muted">— Mentor</p>
+          </div>
+          <div class="slide">
+            <p>Strong problem-solving attitude and ownership from prototype to delivery.</p>
+            <p class="muted">— Teammate</p>
+          </div>
+          <div class="slide">
+            <p>Attention to detail in both ML experiments and UI polish.</p>
+            <p class="muted">— Project Guide</p>
+          </div>
+        </div>
+        <div class="dots" id="dots" aria-label="testimonial navigation"></div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <!-- ================= Contact ================= -->
+    <section id="contact" class="card">
+      <h2 class="section-title">Contact</h2>
+      <div class="grid contact-grid">
+        <div>
+          <p class="muted">I'd love to collaborate or chat about cloud technology, software projects, or internships. Reach out!</p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:varshithakilani@gmail.com">varshithakilani@gmail.com</a></li>
+            <li><strong>Location:</strong> Gajuwaka, Visakhapatnam</li>
+          </ul>
+          <div class="socials">
+            <a class="icon-btn" href="https://github.com/varshithakilani2306" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a class="icon-btn" href="https://www.linkedin.com/in/varshitha-kilani-902b59355?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form-modern card" style="background:transparent">
+          <label for="name">Name
+            <input id="name" name="name" required placeholder="Your name" /></label>
+          <label for="email">Email
+            <input type="email" id="email" name="email" required placeholder="name@example.com" /></label>
+          <label for="message">Message
+            <textarea id="message" name="message" rows="4" required placeholder="Say hello!"></textarea>
+          </label>
+          <div class="actions"><button class="btn primary" type="submit">Send Message</button></div>
+          <p id="formMsg" class="muted" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </div>
+  <!-- ================= Footer ================= -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Kilani Vijaya Sai Varshitha</strong>
+        <p class="muted">Engineering · Cloud · Full Stack Development</p>
+      </div>
+      <div>
+        <strong>Navigation</strong>
+        <div class="actions" style="margin-top:.4rem">
+          <a class="btn" href="#hero">Home</a>
+          <a class="btn" href="#projects">Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div>
+        <strong>Legal</strong>
+        <p class="muted">© <span id="year"></span> All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
